@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box;
+}
+
+:root, #buttons {
+  font-size: 62.5%;
+  font-family: 'Inter';
+  color: white;
+}
+
+body { 
+  font-size: 1.4rem;
+  background-color: #141414;
+}
+
+#profile {
+  background-color: #1f1f1f;
+  font-size: 1.4rem;
+
+  text-align: center;
+  width: 34rem; 
+  margin: 10rem auto;
+  padding: 2.8rem;
+
+  border-radius: 5%;
+}
+
+#profile img {
+  width: 10rem;
+  border-radius: 50%;
+
+  margin-bottom: 2rem;
+}
+
+#profile img:hover {
+  filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+}
+
+header h1 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+} 
+
+header span {
+  color: #c6e75c;
+  font-weight: bold;
+}
+
+header span:hover {
+  color: #a9c748;
+}
+
+header p:nth-child(4) {
+  margin: 2rem auto;
+}
+
+#buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+button {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+
+  width: 28rem;
+  height: 5rem;
+
+  padding: 1rem;
+
+  border-radius: 1rem;
+  border: none;
+
+  background-color: #333333;
+}
+
+button:hover {
+  background-color: #292828;
+}
+
+@media (min-width: 380px) {
+  #profile {
+    width: 37.5rem;
+  }
+
+  button {
+    width: 30rem;
+  }
+}
